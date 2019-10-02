@@ -1,0 +1,61 @@
+body {
+    font-family: arial,sans-serif;
+}
+.menu {
+    font-size: 12px;
+    float: right;
+}
+.menu li {
+    display: inline;
+    
+}
+.button {
+    display: inline;
+}
+.menu li img {
+
+}
+.menu li a.singin {
+    color: white;
+    background:#4285F4;
+    font-weight: 800;
+    padding: 5px;
+}
+.menu li a {
+    text-decoration: none;
+    color: black
+}
+main {
+    min-width: 1000px;
+    min-height: 800px;
+    text-align: center;
+    padding-top: 200px;
+}
+.country {
+    border-bottom: solid 1px;
+    border-color: rgb(212, 212, 212);
+
+    
+}
+footer {
+    background-color:#f2f2f2;
+    position: fixed; 
+    width: 100%;
+    border-top: solid 1px;
+    border-color: rgb(214, 214, 214);
+    font-size:14px;
+    color:rgb(80, 80, 80); 
+    margin-top: -140px;
+
+}
+.left {
+    display: inline-block;
+    float: left;
+    margin: 5px;
+}
+.right {
+    display: inline-block;
+    float: right;
+    margin: 5px;
+    padding: 0 20px 0 0;
+}
