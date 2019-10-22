@@ -18,43 +18,39 @@ body {
   color: black;
   font-size: 13px;
 }
-main {
-  min-width: 1000px;
-  position: absolute;
-  top: 250px;
-  padding-left: 800px;
-
+.gmain {
+display:flex;
+align-items:center;
+flex-direction: column;
+padding-top: 150px;
 }
-.buttons {
-  margin-left: -50px;
+.gmain img {
+  padding-bottom: 40px;
+}
+.gmain .buttons {
+  display:flex;
   padding-top: 30px;
 }
-.logo {
-  margin-bottom: 30px;
-}
+.gmain p {
+  font-size: 13px;
+  }
 
-#button {
-  display: inline;
- padding:10px
-}
+
 #search {
-  border-radius: 30px;
+  border-radius: 20px;
+  border: 1px solid rgb(212, 212, 212);
   width: 600px;
-  height: 30px;
-  border: 1px solid grey;
-  padding-left: 10px;
-  margin: -120px;
-  top:70px;
+  height: 40px;
+  padding-left: 30px;
 }
-
-main p {
-  margin-left:-60px;
-  padding-top: 30px;
+#button {
+  padding:10px;
 }
-
 .country {
   border-bottom: solid 1px;
   border-color: rgb(212, 212, 212);
+  padding-left: 30px;
+  font-size:14px;
 
 }
 
@@ -74,9 +70,11 @@ flex: 1;
 }
 .footer-l p {
 padding-right: 20px;
+padding-left:30px;
 }
 .footer-r p {
   padding-left: 20px;
+  padding-right: 30px;
 }
 footer {
 font-size:13px;
