@@ -1,61 +1,88 @@
 body {
-    font-family: arial,sans-serif;
-}
-.menu {
-    font-size: 12px;
-    float: right;
-}
-.menu li {
-    display: inline;
-    
-}
-.button {
-    display: inline;
-}
-.menu li img {
+  font-family: arial,sans-serif;
+  margin:0;
+ 
 
 }
-.menu li a.singin {
-    color: white;
-    background:#4285F4;
-    font-weight: 800;
-    padding: 5px;
+.menu-r ul {
+    display:flex;
+    justify-content: end;
 }
-.menu li a {
-    text-decoration: none;
-    color: black
+.menu-r li {
+  list-style: none;
+  margin-right: 15px;
+  padding: 0;
+}
+.menu-r a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
 }
 main {
-    min-width: 1000px;
-    min-height: 800px;
-    text-align: center;
-    padding-top: 200px;
-}
-.country {
-    border-bottom: solid 1px;
-    border-color: rgb(212, 212, 212);
+  min-width: 1000px;
+  position: absolute;
+  top: 250px;
+  padding-left: 800px;
 
-    
+}
+.buttons {
+  margin-left: -50px;
+  padding-top: 30px;
+}
+.logo {
+  margin-bottom: 30px;
+}
+
+#button {
+  display: inline;
+ padding:10px
+}
+#search {
+  border-radius: 30px;
+  width: 600px;
+  height: 30px;
+  border: 1px solid grey;
+  padding-left: 10px;
+  margin: -120px;
+  top:70px;
+}
+
+main p {
+  margin-left:-60px;
+  padding-top: 30px;
+}
+
+.country {
+  border-bottom: solid 1px;
+  border-color: rgb(212, 212, 212);
+
+}
+
+div[class^="footer"] {
+  
+}
+footer div {
+  display: flex;
+}
+.footer-r {
+flex: 1;
+justify-content: end;
+}
+.footer-l {
+flex: 1;
+
+}
+.footer-l p {
+padding-right: 20px;
+}
+.footer-r p {
+  padding-left: 20px;
 }
 footer {
-    background-color:#f2f2f2;
-    position: fixed; 
-    width: 100%;
-    border-top: solid 1px;
-    border-color: rgb(214, 214, 214);
-    font-size:14px;
-    color:rgb(80, 80, 80); 
-    bottom: 0% ;
-
-}
-.left {
-    display: inline-block;
-    float: left;
-    margin: 5px;
-}
-.right {
-    display: inline-block;
-    float: right;
-    margin: 5px;
-    padding: 0 20px 0 0;
+font-size:13px;
+background-color:#f2f2f2;
+color:rgb(80, 80, 80); 
+position: fixed;
+width: 100%;
+bottom:0;
 }
