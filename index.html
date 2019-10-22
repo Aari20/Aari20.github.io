@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>   
     <head>
-        <link rel="stylesheet" type="text/css" href="./Styles/Styles.css">
+        <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
+        
         <title> Gogule search engine</title>
     </head>
     <body>
-        <nav class="menu">
+        <nav class="menu-r">
             <ul>
                 <li>
                     <a href="https://mail.google.com/mail/u/0/">Gmail</a>                
@@ -21,33 +22,39 @@
                 </li>
             </ul>
         </nav>
-        <main>
-            <img class="logo" src="Images/gogulelogo.png" alt="Gogules logo">
-            <form method="POST">
+        <main class="gmain">
+            <img class=logo src="Images/gogulelogo.png" alt="Gogules logo">
+            <form action="" method="POST">
                 <label for="search"></label>
                 <input id="search" type="text" name="Gogule">
                 <br>
             </form>
-            <form method="GET" action="https://www.Google.com">
+            <div class="buttons">
+            <form id="button" method="GET" action="https://www.Google.com">
                 <button type="submit">Cauta Gogule!</button>  
             </form>    
-            <form method="GET" action="https://youtu.be/X-Q764w9gSQ?t=42">
+            <form  id="button" method="GET" action="https://youtu.be/X-Q764w9gSQ?t=42">
                 <button type="submit">Am avut noroc!</button>
             </form> 
+            </div>
             <p> Gogu mai stie si limba:<a href="https://en.wikipedia.org/wiki/Hungarian_language">maghiara</a> 
             sau <a href="https://ro.wikipedia.org/wiki/Limba_romani">tiganeasca</a>.</p>
         </main>
         <footer>
             <p class="country">Romania</p>
-            <ul class="footer">
-                <li class="left">Advertising</li>
-                <li class="left">Business</li>
-                <li class="left">About</li>
-                <li class="left">How search works</li>
-                <li class="right">Privacy</li>
-                <li class="right">Terms</li>
-                <li class="right">Settings</li>
-            </ul>
+            <div>
+                <div class="footer-l">
+                    <p>Advertising</p>
+                    <p>Business</p>
+                    <p>About</p>
+                    <p>How search works</p>             
+                </div> 
+                <div class="footer-r">
+                    <p>Privacy</p>
+                    <p>Terms</p>
+                    <p>Settings</p>
+                </div>      
+            </div>       
         </footer>    
     </body>
 </html>
