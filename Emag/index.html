@@ -41,6 +41,24 @@
         font-size: 12px; 
         color:grey
         }
+        .btn_pr {
+          padding:14px 20px;
+          font-size: 18px;
+          line-height: 20px;
+          border-radius: 4px;
+          color: #005eb8;
+background-color: #fff;
+border-color: #005eb8;
+
+        }
+        i[class*="fa_btn"] {
+          font-size: 35px;
+          position:absolute;
+          top:0;
+          left:0;
+          display:block;
+          
+        }
     </style>
   <div class="container pt-4">
     <div class="row">
@@ -126,7 +144,7 @@
 <hr>
 <div class="container">
     <div class="row">
-      <div class="col-sm-5">
+      <div class="col-sm-4">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -173,10 +191,24 @@
             </div>
           </div>
         </div>
+        <h6 class="g_text pt-2">Beneficii:</h6>
+        <p><i class="fas fa-gift"></i> <b>9 puncte</b> prin cardul eMAG-Raiffeisen detalii</p>
+        <p><i class="fas fa-box-open"> </i> Deschiderea coletului la livrare</p>
+        <p><i class="fas fa-undo"> </i> Retur gratuit in 30 de zile detalii</p>
       </div>
       
-      <div class="col-sm-2">
-        One of three columns
+      <div class="col-sm-4">
+          <s style="font-size:20px">999<sup>99 </sup></s><span style="color:grey"> (-11%)</span>
+          <p style="font-size:25px; color:red; "><b>887<sup>41</sup> Lei</b></p>
+          <p style="background-color: #f50; display:inline; border-radius: 5px; padding:4px; color:white; font-size:85%">ultimele 3 produse</p>
+          <p class="pt-3"><b>Garantie inclusa: </b><a href="#">detalii</a></p>
+          <p>Persoane fizice: 24 luni</p>
+          <div class="d-flex flex-column">
+          <button class="btn btn_pr  bg-primary mb-2 position-relative " style="color:white;"><i class="fas fa-shopping-cart fa_btn_1 mt-2 ml-3"></i> Adauga in cos</button>
+          <button class="btn btn_pr p-1 mb-2 position-relative"style="font-size:14px;"> <i class="fas fa-shopping-cart fa_btn_2 mt-2 ml-3"></i>Cumpara in rate<br>
+          <span style="color:red; font-size:12px;">de la 59<sup>05</sup>Lei/luna</span></button>
+          <button class="btn btn_pr position-relative"><i class="far fa-heart fa_btn_3 mt-2 ml-3"></i>Adauga la favorite</button>
+        </div>
       </div>
     </div>
   </div>
