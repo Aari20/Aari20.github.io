@@ -105,12 +105,13 @@ background:linear-gradient(to right,#4a60c1 10%,#3985e0);
 font-size:14px;
 }
 .credit_btn_pr:hover,
-.fav_btn_pr:hover  {
+.fav_btn_pr:hover,
+.oferta_btn:hover  {
   background-color:#cde5ff; 
 }
 
 i[class*="fa_btn"] {
- font-size: 35px;
+ font-size: 30px;
  position:absolute;
  top:0;
  left:0;
@@ -179,6 +180,39 @@ font-size:12px;
   border: 1px solid #008cff;
 }
 .oferta {
-border:1px solid #b9b9b9;
-box-shadow: 0px 2px 2px 0;
+  border:1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 12px -4px rgba(0,0,0,.1);
+
 }
+.oferta_btn {
+  padding:14px 20px;
+  font-size: 14px;
+  line-height: 5px;
+  border-radius: 4px;
+  color: #005eb8;
+  background-color: #fff;
+  border-color: #005eb8;
+  width: 100%;
+ }
+ .stock_oferta {
+  background-color: #090;
+  border-radius: 2px;
+  display:inline;
+  padding: 4px;
+  color:white;
+  font-size:11px;
+  font-weight: bold;
+ }
+ 
+ .fa-check {
+  color: #090;
+ }
+ .promo_price_o {
+  font-size:18px; 
+  color:red; 
+}
+.s_price_o {
+  font-size:14px;
+}
+ 
