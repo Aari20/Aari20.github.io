@@ -1,0 +1,76 @@
+html {
+
+}
+body {
+    background-color: rgba(248,248,252) ;
+}
+.head1 {
+    background-image: url("../img/header.jpg");
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+
+}
+.logo {
+    max-height: 70px;
+    filter: invert(1); brightness(0) ;
+}
+.navbar .navbar-nav{
+    margin-left: auto;
+}
+.nav1 {
+    max-width: 1299px;
+    margin: auto;
+
+}
+.navtext {
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+
+
+.searchbar {
+    background-color: rgba(254,254,254,0.15);
+    border-color: rgba(254,254,254,0.15);
+    width: 800px;
+    border-radius: 4px;
+    padding-left: 40px;
+    height: 40px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.7; /* Firefox */
+}
+.searchbar:focus {
+    background-color: rgba(254,254,254,0.25);
+    border-color: rgba(254,254,254,0.25);
+    color:rgba(254,254,254,0.25) ;
+    outline-width: 0
+}
+.cards {
+    z-index:1;
+    background-color: white;
+    box-shadow:1px 1px  rgba(24,39,166,0.10);
+}
+
+.cards:hover {
+    z-index:2;
+    background-color: white;
+    box-shadow:3px 3px 3px rgba(24,39,166,0.15);
+}
+.fa-cog, .fa-user, .fa-sliders-h, .fa-code, .fa-credit-card,
+.fa-fingerprint, .fa-download, .fa-envelope-open {
+    font-size: 70px;
+    /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+    font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (1600 - 300)));
+    color: rgba(78,51,180,0.76);
+}
+.cards h3{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(78,51,180,0.76);
+    /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+    font-size: 20px;
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
