@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Category Article</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0b9b282746.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/syles.css">
+
+
+</head>
+<body>
+<header class="head1">
+    <nav class="navbar navbar-expand-sm navbar-dark nav1">
+        <img src="img/logo.png" alt="bapp logo" class="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="category.html">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="article.html">Article</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form class="form-inline search">
+        <input class="searchbar mx-4 m-md-auto " type="search" placeholder="Search" aria-label="Search">
+    </form>
+</header>
+
+<div class="main-cont">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Help Center</a></li>
+            <li class="breadcrumb-item "><a href="category.html">Getting Started</a></li>
+            <li class="breadcrumb-item active" aria-current="page"> Article</li>
+        </ol>
+    </nav>
+
+    <div class="article card">
+        <h4>Learn the Basics of Git in Under 10 Minutes</h4>
+        <p class="last-upd">Posted on February 20 2020</p>
+        <p class="desc">If you want to get started on learning about Git technology, you’ve come to the right place.
+            This is a comprehensive beginner’s guide to Git. There are many clients for Git. The technology is all the
+            same no matter the client. But in this guide we’ll be using GitHub to understand Git.</p>
+        <p>Git is a version-control system for tracking changes in computer files and coordinating work on those files
+            among multiple people. Git is a Distributed Version Control System. So Git does not necessarily rely on a
+            central server to store all the versions of a project’s files. Instead, every user “clones” a copy of a
+            repository (a collection of files) and has the full history of the project on their own hard drive. This
+            clone has all of the metadata of the original while the original itself is stored on a self-hosted server or
+            a third party hosting service like GitHub.
+        </p>
+
+        <h5>There are four fundamental elements in the Git Workflow</h5>
+        <h6>Working Directory, Staging Area, Local Repository and Remote Repository.</h6>
+        <div class="img-a">
+            <img class="img-fluid" src="img/git_workflow.png " alt="git workflow">
+            <div class="caption">Git Basic workflow</div>
+        </div>
+        <h5>If you consider a file in your Working Directory, it can be in three possible states.</h5>
+
+        <p><strong>It can be staged.</strong> Which means the files with with the updated changes are marked to be
+            committed to the local
+            repository but not yet committed.</p>
+        <p><strong>It can be modified.</strong> Which means the files with the updated changes are not yet stored in the
+            local
+            repository.</p>
+        <p><strong>It can be committed.</strong> Which means that the changes you made to your file are safely stored in
+            the local
+            repository.</p>
+
+        <h5>A few useful GIT commands:</h5>
+
+        <pre class="code">
+
+            $ git --version
+        </pre>
+        <pre class="code">
+
+            $ git config --global user.name "YOUR_USERNAME"
+            $ git config --global user.email "im_satoshi@musk.com"
+            $ git config --global --list # To check the info you just provided
+
+        </pre>
+        <h5>Add files to the Staging Area for commit:</h5>
+        <pre class="code">
+
+            $ git add .  # Adds all the files in the local repository and stages them for commit
+            $ git add README.md # To add a specific file
+
+        </pre>
+        <h5>Before we commit let’s see what files are staged:</h5>
+        <pre class="code">
+
+            $ git status # Lists all new or modified files to be committed
+
+        </pre>
+        <h5>Commit Changes you made to your Git Repo</h5>
+        <pre class="code">
+
+            $ git commit -m "First commit"# The message in the " " is given so that the other users can read the message and see what changes you made
+        </pre>
+        <h5>Uncommit Changes you just made to your Git Repo:</h5>
+        <pre class="code">
+
+            $ git reset HEAD~1# Remove the most recent commit# Commit again!
+        </pre>
+        <h5>Add a remote origin and Push:</h5>
+        <p>Now each time you make changes in your files and save it, it won’t be automatically updated on GitHub.
+            All the changes we made in the file are updated in the local repository. Now to update the changes to the
+            master:</p>
+
+        <pre class="code">
+
+            $ git remote add origin remote_repository_URL# sets the new remote
+        </pre>
+        <pre class="code">
+
+            $ git remote -v# List the remote connections you have to other repositories.
+        </pre>
+        <pre class="code">
+
+            $ git push -u origin master # pushes changes to origin
+        </pre>
+        <h5> See the Changes you made to your file:</h5>
+        <pre class="code">
+
+            $ git diff # To show the files changes not yet staged
+        </pre>
+
+        <h5>Revert back to the last committed version to the Git Repo: </h5>
+        <pre class="code">
+
+           $ git checkout .
+
+            OR for a specific file
+
+           $ git checkout -- < filename >
+        </pre>
+
+        <p class="last-upd"> To be continued..</p>
+
+        <div class="d-flex">
+            <div class="mr-auto p-2"><h6>Caegory boxes section</h6><a href="#"> <i class="fas fa-long-arrow-alt-left"></i>Previous</a></div>
+            <div class="p-2 text-right"><h6>Basic Theme setup </h6><a href="#">Next<i class="fas fa-long-arrow-alt-right"></i></a></div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<footer class="">
+    <div class="">
+        <ul class="foot-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="">
+        <ul class="foot-nav mt-4">
+            <li><a href="www.twitter.com"><i class="fab fa-twitter mx-2"></i></a></li>
+            <li><a href="www.facebook.com"><i class="fab fa-facebook-square mx-2"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
